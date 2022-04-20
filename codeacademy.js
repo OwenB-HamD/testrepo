@@ -46,4 +46,40 @@ Built-In Objects: -
 -   If we use the '.random()' method, this will return a random number between and 0 and 1. To generate a random number between 0 and 50, we could multiply the reulst by 50 'console.log(Math.random()) * 50;'.
 -   This example is likely to evaluate to a decimal. To ensure that the answer is a whole number, we can use another 'Math' method called 'Math.floor()' to round down a number 'console.log(Math.floor(Math.random() * 50));'.
 -   In this case, 'Maths.random' generates a random number between 0 and 1. We then multiply that number by 50 which will now give us a number between 0 and 50. Then, 'Math.floor()' rounds the number down to the nearest whole number. If we wanted to see the number printed to the terminal, we would still need to us the 'console.log()' statement at the beginning of the code.
+
+Variables: -
+-   A 'variable' or 'var' is a container for a value and creates or declares a new variable.
+-   In short, variables label and store data in memory. There are only a few things you can do with variables: Create a variable with a decriptive name, store or update information stored in a variable and reference or "get" information stored in a variable.
+-   The name of the variable always follows the camel casing capitalisation (camelCaseEverything).
+
+There are are few general rules for naming variables:
+-   Variable names cannot start with numbers.
+-   Variable names are case sensitive, so 'myname' and 'myName' would be different variables. It is bad practice to create two variables that have the same name using different cases.
+-   Variable names cannot be the same as keywords.
+
+-   The 'let' keyword signals that the variable can be reassigned a different value.
+-   Another thing that we should be aware of when using 'let' and even 'var' is that we can declare a variable without assigning the variable a value. In that case, the variable will be automatically initialised with a value of 'undefined'.
+
+-   The 'const' keyword is short for 'constant'.
+-   Just like with 'var' and 'let' you can store any value in a 'const' variable. The way you declare a const variable and assign a value to it follows the same structure as 'let' and 'var'.
+-   However, a 'const' variable cannot be reassigned because it is constant. If you try to reassign a 'const' variable you will get a 'TypeError'.
+-   Constant variables must be assigned a value when declared. If you try to declare a 'const' variable without a value, you will get a 'SyntaxError'.
+-   Think about which keyword to use, if you think you will need to reassign the variable later on, use 'let' instead of 'const'.
+
+Increment & Decrement Operators: -
+-   Increment Operator (++) and Decrement Operator (--).
+-   The increment operator will increase the value of the variable by 1. The decrement operator will decrease the value of the variable by 1.
+
+String Concatenation with Variables: -
+-   The '+' operator can be used to combine two string values even if those values are being stored in variables.
+
+String Interpolation: -
+-   We can insert, or 'interpolate', vairables into strings using 'template literals'.
+-   A template literal is wrapped in backticks (``).
+-   Inside of the template literal, the placeholder is included in the format of '${placeholder}'. The value of 'placeholder' is inserted into the template literal.
+
+Typeof Operator: -
+-   While writing code, it can be useful to keep track of the data types of variables in your program.
+-   If you need to check the data type of a variable's value, you can use the 'typeof' operator.
+-   The 'typeof' operator checks the value to its right and 'returns', or passes back, a string of the data type.
 */
