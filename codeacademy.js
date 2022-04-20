@@ -40,4 +40,10 @@ Properties: -
 Methods: -
 -   Methods are actions that we can perform. Data types have access to specific methods that allow us to handle instances of that data type. JavaScript provides a number of string methods. The way we use these methods is to; include a dot operator before the method, use the name of the method then opening and closing parentheses afterwards. For example, 'example string'.methodName()'.
 - Another example would be 'console.log()'. When we use this, we are using the '.log()' method on the 'console' object.
+
+Built-In Objects: -
+-   If we wanted to perform more complex mathematical operations than arithmetic, JavaScript has the built-in 'Math' object.
+-   If we use the '.random()' method, this will return a random number between and 0 and 1. To generate a random number between 0 and 50, we could multiply the reulst by 50 'console.log(Math.random()) * 50;'.
+-   This example is likely to evaluate to a decimal. To ensure that the answer is a whole number, we can use another 'Math' method called 'Math.floor()' to round down a number 'console.log(Math.floor(Math.random() * 50));'.
+-   In this case, 'Maths.random' generates a random number between 0 and 1. We then multiply that number by 50 which will now give us a number between 0 and 50. Then, 'Math.floor()' rounds the number down to the nearest whole number. If we wanted to see the number printed to the terminal, we would still need to us the 'console.log()' statement at the beginning of the code.
 */
