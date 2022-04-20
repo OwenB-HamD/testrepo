@@ -111,5 +111,36 @@ Comparison Operators: -
 -   Comparison operators compare the calue on the left with the value on the right.
 
 Logical Operators: -
--   
+-   Logical Operators are operators that work with boolean values in JavaScript.
+-   We can use logical operators to add more sophisticated logic to our conitionals.
+-   There are three logical operators:
+        -   The 'and' operator:                 &&
+        -   The 'or' operator:                  ||
+        -   The 'not' or 'bang' operator:       !
+
+-   When we use the && operator,, we are checking that two conditions are 'true' therefore meaning that both conditions must be 'true' for the entire condition to evaluate to 'true' and execute. Otherwise, if either condition is 'false', the '&&' condition will evaluate to 'false' and the 'else' block will execute instead.
+
+-   When using the '||' operator, only one of the conditions must evaluate to 'true' for the overall statement to evaluate to 'true'.
+- If the first condition in an '||' statement evaluates to 'true', the second condition won't even be checked. Only if the first condition evaluates to 'false' will the second condition be evaluated. The code in the 'else' statement afterwards will only execute if both of the comparisons evaluate to 'false'.
+
+-   The '!' operator reverses or 'negates' the value of a boolean.
+-   Essentially, the '!' operator will either take a true value and pass back 'false' or it will take a 'false' value and pass back 'true'.
+-   Logical operators are often used in conditional statements to add another layer of logic to our code. 
+
+Truthy & Falsey: -
+-   Sometimes, we may want to check if a variable exists and we won't necessarily want it to equal a specific value, we will only check to see if the variable has been assigned a value. For example:
+            -   let myVariable = 'I Exist!';
+ 
+                if (myVariable) {
+                    console.log(myVariable)
+                } else {
+                    console.log('The variable does not exist.')
+}
+-   The code block in the 'if' statement will run because 'myVariable' has a truthy value even though the value of 'myVariable' is not explicitly 'true', when used in a boolean or conditional context, it evaluates to 'true' because it has been assigned a non-falsy value.
+-   The list of falsy values include:
+        -   '0'
+        -   Empty strings like "" or ''
+        -   'null' which represents when there is no value at all
+        -   'undefined' which represents when a declared variable lacks a value
+        -   'NaN' or Not a Number
 */
