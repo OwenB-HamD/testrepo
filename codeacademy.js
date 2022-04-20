@@ -143,4 +143,26 @@ Truthy & Falsey: -
         -   'null' which represents when there is no value at all
         -   'undefined' which represents when a declared variable lacks a value
         -   'NaN' or Not a Number
+
+Ternary Operators: -
+-   We can use a ternary operator to simplify an 'if else' statement. For example:
+        -    let isNightTime = true;
+ 
+             if (isNightTime) {
+               console.log('Turn on the lights!');
+             } else {
+               console.log('Turn off the lights!');
+             }
+
+Becomes:
+
+             isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+
+-   In the example above:
+             -  The condition, 'isNightTime', is provided before the '?'.
+             -  Two expressions follow the '?' and are separated by a colon.
+             -  If the condition evaluates to 'true', the first expression executes.
+             -  If the condition evaluates to 'false', the second expression executes.
+-   Like 'if else' statements, ternary operators can be used for conditions which evaluate to 'true' or 'false'.
+
 */
