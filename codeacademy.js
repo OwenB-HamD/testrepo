@@ -82,4 +82,34 @@ Typeof Operator: -
 -   While writing code, it can be useful to keep track of the data types of variables in your program.
 -   If you need to check the data type of a variable's value, you can use the 'typeof' operator.
 -   The 'typeof' operator checks the value to its right and 'returns', or passes back, a string of the data type.
+
+Conditional Statements: -
+-   A conditional statement checks a specific condition(s) and perfomrs a task based on the condition(s).
+
+If Statement: -
+-   Some tasks can be performed based on an 'if' statement.
+-   The 'if' statement is composed of:
+    -   The 'if' keyword followed by a set of parentheses which is followed by a 'code block' or 'block statement', indicated by a set of curly braces '{}'.
+    -   Inside the parentheses, a condition is provided, e.g. true or false.
+    -   Depending on the desired condition, the code inside of the curly braces runs, or executes.
+    -   If the condition does not evaluate to the desired outcome, the block won't execute.
+
+If Else Statements: -
+-   If we wanted to add a default behaviour to an 'if' statement, we can add an 'else' statement to run a block of code when the condition evaluates to the opposite of the 'if' statement.
+-   An 'else' statement must be paired with an 'if' statement and together they are referred to as an ' if else' statement.
+-   'If else' statements allow us to automate solutions to yes-or-no questions, also known as 'binary decisions'.
+
+Comparison Operators: -
+-   When writing conditional statements, sometimes we need to use different types of operators to compare values. These operators are known as 'comparison operators'.
+-   These are some of the handy comparison operators and their syntax:
+        -   Less than:                  <
+        -   Greater than:               >
+        -   Less than or equal to:      <=
+        -   Greater than or equal to:   >=
+        -   Is equal to:                ===
+        -   Is not equal to:            !==
+-   Comparison operators compare the calue on the left with the value on the right.
+
+Logical Operators: -
+-   
 */
