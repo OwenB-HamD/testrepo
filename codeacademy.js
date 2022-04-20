@@ -165,4 +165,5 @@ Becomes:
              -  If the condition evaluates to 'false', the second expression executes.
 -   Like 'if else' statements, ternary operators can be used for conditions which evaluate to 'true' or 'false'.
 
+
 */
