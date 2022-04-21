@@ -165,5 +165,33 @@ Becomes:
              -  If the condition evaluates to 'false', the second expression executes.
 -   Like 'if else' statements, ternary operators can be used for conditions which evaluate to 'true' or 'false'.
 
+Else IF Statements: -
+-   We can add more conditions to our 'if else' statement with an 'else if' statement.
+-   The 'else if' statement allows for more than two possible outcomes. You can add as many 'else if' statements as you'd like. 
+-   The 'else if' statement comes after the 'if' statement and before the 'else' statement. The 'else if' statement also takes a condition.
 
+The 'Switch' Keyword: -
+-   If we need to check a large number of values, a 'switch' statement provides an alternative with it's own syntax and is easier to read and write.
+-   For example:
+             -  let groceryItem = 'papaya';
+ 
+                switch (groceryItem) {
+                  case 'tomato':
+                    console.log('Tomatoes are $0.49');
+                    break;
+                  case 'lime':
+                    console.log('Limes are $1.49');
+                    break;
+                  case 'papaya':
+                    console.log('Papayas are $1.29');
+                    break;
+                  default:
+                    console.log('Invalid item');
+                    break;
+                }
+-   The 'switch' keyword initiates the statement and is followed by (...), which contains the value that each 'case' will compare.
+-   Inside the block '{...}', there are multiple 'case's. The 'case' keyword checks if the expression matches the specified value that comes after it. The value following the first 'case' is 'tomato'. If the value of 'groceryItem' equalled 'tomato', that 'case's 'console.log' would run.
+-   The value of 'groceryItem' is 'papaya', so the third case runs 'papyas are $1.29', this is logged to the console.
+-   The 'break' keyword tells the computer to exit the block and not execute any more code or check any other cases inside the code block.
+-   At the end of each 'switch' statement, there is a 'default' statement. If none of the 'case's are true, then the code in the 'default' statement will run. 
 */
