@@ -194,4 +194,20 @@ The 'Switch' Keyword: -
 -   The value of 'groceryItem' is 'papaya', so the third case runs 'papyas are $1.29', this is logged to the console.
 -   The 'break' keyword tells the computer to exit the block and not execute any more code or check any other cases inside the code block.
 -   At the end of each 'switch' statement, there is a 'default' statement. If none of the 'case's are true, then the code in the 'default' statement will run. 
+
+Function Declarations: -
+-   One way to create a function in JavaScript is by using a 'function declaration'.
+-   Just like how a variable declaration binds a value to a variable name, a function declaration binds a function to a name or an 'identifier'.
+-   A function declaration consists of:
+                -   The 'function' keyword
+                -   The name of the function, or it's identifier, followed by parentheses.
+                -   A function boy, or the block of statements required to perform a specific task, enclosed in the function's curly brackets.
+-   A function declaration is a function that is bound to an identifier, or name.
+-   We should also be aware of the 'hoisting' feature in JavaScript which allows access to function declarations before they're defined (this isn't considered good practice).
+
+Calling A Function: -
+-   A 'function declaration does not ask the code inside the function body to run, it just declares the existence of the function.
+-   The code inside a function body runs, or 'executes', only when the function is 'called'.
+-   To call a function in your code, you type the function name followed by parentheses.
+-   
 */
