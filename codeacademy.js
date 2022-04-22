@@ -255,4 +255,8 @@ Function Expressions: -
 -   Another way to define a function it to use a 'function expression'. To define a function inside an expression, we can use the 'function' keyword.
 -   In a function expression, the function name is usually ommitted. A function with no name is called an 'anonymous function'.
 -   A function expression is often stored in a variable i order to refer to it.
+-   To declare a function expression: -
+                    - Declare a variable to make the variable's name be the name, or identifier, of your function. It is common practice to use the 'const' as the keyword to declare a variable.
+                    - Assign as that variable's value an anonymous function created by using the 'function' keyword followed by a set of parentheses with possible parameters. Then a set of curly braces that contain the function body.
+-   To invoke a function expression, write the name of the variable in which the function is storede followed by parentheses enclosing any arguments being passed into the function.
 */
