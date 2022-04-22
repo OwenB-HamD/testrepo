@@ -249,6 +249,10 @@ Helper Functions: -
                     - '27' is returned back to the function call in 'getFahrenheit()'.
                     -   'getFahrenheit()' continues to execute. it adds '32' to '27', which evaluates to '59'.
                     -   Finally, '59' is returned back to the function call 'getFahrenheit(15)'.
--   We can use functions to section off small bits of logic or tasks, then use them when we need to.
--   
+-   We can use functions to section off small bits of logic or tasks, then use them when we need to. Writing helper functions can help take large and difficult tasks and break them into smaller and more manageable tasks.
+
+Function Expressions: -
+-   Another way to define a function it to use a 'function expression'. To define a function inside an expression, we can use the 'function' keyword.
+-   In a function expression, the function name is usually ommitted. A function with no name is called an 'anonymous function'.
+-   A function expression is often stored in a variable i order to refer to it.
 */
