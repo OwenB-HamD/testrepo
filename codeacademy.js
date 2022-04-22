@@ -209,5 +209,46 @@ Calling A Function: -
 -   A 'function declaration does not ask the code inside the function body to run, it just declares the existence of the function.
 -   The code inside a function body runs, or 'executes', only when the function is 'called'.
 -   To call a function in your code, you type the function name followed by parentheses.
+
+Parameters and Arguments: -
+-   When declaring a function, we can specify it's 'parameters'.
+-   Parameters allow functions to accept input(s) and perform a task using the input(s).
+-   We use parameters as placeholders for information that will be passed to the function when it is called.
+-   When calling a function that has parameters, we specify the values in the parentheses that follow the function name.
+-   The values that are passed to the function when it is called are called 'arguments'.
+-   Arguments can be passed to the function as values or variables.
+
+Default Parameters: -
+-   Default parameters allow parameters to have a predetermined value in case there is no argument passed into the function or if the argument is 'undefined' when called.
+
+Return: -
+-   When a function is called, the computer will run through the function's code an evaluate the result of calling the function. By default that resulting value is 'undefined'.
+-   To pass back information from the function call, we use a return statement. 
+-   To create a return statement, we use the 'return' keyword followed by the value that we wish to return.
+-   When a 'return' statement is used in a function body, the execution of the function is stopped and the code that follows it will not be executed.
+
+Helper Functions: -
+-   We can also use the return value of a function inside another function.
+-   Tjese functions being called within another function are referred to as 'helper functions'.
+-   Since each function is carrying out a specific task, it makes our code easier to read and debug if necessary.
+-   For example, if we wanted to define a function that converts the temperature from Celcius to Fahrenheit, we could write two functions like:
+                -   function multiplyByNineFifths(number) {
+                      return number * (9/5);
+                    };
+ 
+                    function getFahrenheit(celsius) {
+                      return multiplyByNineFifths(celsius) + 32;
+                    };
+ 
+                    getFahrenheit(15); // Returns 59
+-   In the example above:
+                    -   'getFahrenheit()' is called and '15' is passed as an argument.
+                    -   The code block inside of 'getFahrenheit()' calls 'multiplyByNineFifths()' and passes '15' as an argument.
+                    - 'multiplyByNineFifths()' takes the argument of '15' for the 'number' parameter.
+                    -   The code block inside of 'multiplyByNineFifths' function multiplies '15' by '(9/5)', which evaluates to '27'.
+                    - '27' is returned back to the function call in 'getFahrenheit()'.
+                    -   'getFahrenheit()' continues to execute. it adds '32' to '27', which evaluates to '59'.
+                    -   Finally, '59' is returned back to the function call 'getFahrenheit(15)'.
+-   We can use functions to section off small bits of logic or tasks, then use them when we need to.
 -   
 */
