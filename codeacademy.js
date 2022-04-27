@@ -1,4 +1,6 @@
 /* 
+REPL: - Read, Evaluate, Print, Loop
+
 Console: - 
 -    The console is a panel that displays important messages, like errors. In JavaScript, the 'console' keyword refers to an object, a collection of data and actions, that we can use in our code. Keywords are words that are built into the JavaScript language, so the computer recognises them and treats them specifically.
 -    .log() = When we write console.log() what we put inside the parenthesis will get printed or logged to the console.
@@ -13,6 +15,7 @@ Data types are the classifications we give to the different kinds of data that w
 -   Undefined = This data type is denoted by the keyword "undefined". It also represents the absence of a value though it has a different use than "null". "Undefined" means that a given value does not exist.
 -   Symbol = A newer feature to the language, symbols are unique identifiers, useful in more complex coding.
 -   Object = Collections of related data.
+-   Bigint = Used for really large numbers.
 
 The above are considered 'primitive'data types. They are the most basic data types in the language. "Objects" are more complex.
 
@@ -258,5 +261,5 @@ Function Expressions: -
 -   To declare a function expression: -
                     - Declare a variable to make the variable's name be the name, or identifier, of your function. It is common practice to use the 'const' as the keyword to declare a variable.
                     - Assign as that variable's value an anonymous function created by using the 'function' keyword followed by a set of parentheses with possible parameters. Then a set of curly braces that contain the function body.
--   To invoke a function expression, write the name of the variable in which the function is storede followed by parentheses enclosing any arguments being passed into the function.
+-   To invoke a function expression, write the name of the variable in which the function is stored followed by parentheses enclosing any arguments being passed into the function.
 */
