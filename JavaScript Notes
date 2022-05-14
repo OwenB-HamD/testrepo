@@ -1,0 +1,106 @@
+DOM: -_______________________________________________
+-   'let newP = document.createElement('p')' = Creates new element, add to the parantheses what type of elemenet you want to create.
+-   If you were to console.log(newP) it would print the new '<p></p> tags to the screen that you have created.
+-   newP.innerText = 'Owen Bovill' To add text to your new <p> element.
+-   'document.body.appendChild(newP)' = This will append your new <p> tag to the <body> of the HTML body.
+
+- Create a variable
+- In it, create li element and store it (createElement)
+- Check it
+- Put some text in the li - '.innerText'
+- Append the new li to the existing ul (appendChild)
+- Select the ul element on the DOM
+- Use appendChild to append the new li to the ul
+- Remember to use let '' = document.querySelector('')
+-   Example:
+    function addLi(text){
+    // select the parent list
+    let ul = document.querySelector('ul')
+    // create the new li
+    let newLi = document.createElement('li')
+    // give the li the text handed in
+    newLi.innerText = text
+    // append the li tp the list
+    ul.appendChild(newLi)
+}
+
+Event Listeners: -___________________________________
+-   button.addEventListener("message", handleMessage);
+
+Fetch: -_____________________________________________
+-   The fetch API interface allows web browser to make HTTP requests to web servers.
+-   Example:
+        fetch(file)
+        .then(c => x.text())
+        .then(y => myDisplay(y));
+-   Example (implemented in a html file):
+    <!DOCTYPE html>
+        <html>
+            <body>
+                <p id="demo">Fetch a file to change this text.</p>
+                <script>
+
+                let file = "fetch_info.txt"
+
+                fetch (file)
+                .then(x => x.text())
+                .then(y => document.getElementById("demo").innerHTML = y);
+
+                 </script>
+            </body>
+        </html>
+-   Since fetch is based on 'async' and 'await', the example above might be easier to understand like this:
+        async function getText(file) {
+            let c = await fetch(file);
+            let y = await x.text();
+            myDisplay(y);
+        }
+
+-   The 'fetch()' requres only one parameter which is the URL of the resource that you want to fetch.
+-   The 'fetch()' method returns a 'Promise' so you can use the 'then()' and 'catch()' methods to handle it.
+-   Example:
+        fetch(url)
+            .then(response => {
+                // handle the response
+            })
+            .catch(errpr => {
+                //handle the error
+            })
+
+-   When the request completes, the resource is available. At this time, the promise will resolve into a 'Response' object.
+-   The 'Response' object is the API wrapper for the fetched resource. The 'Response' object has a number of useful properties and methods to inspect the response.
+
+-   If the contents of the response are in the raw text format, you can use the 'text()' method. The 'text()' method returns a 'Promise' that resolves with the complete contents of the fetched resource.
+-   Example:
+        fetch('/readme.txt')
+            .then(response => response.text())
+            .then(data => console.log(data));
+
+-   In practice, you often use the 'async'/'await' with the 'fetch()' method like this:
+        async function fetchText() {
+            let response = await fetch('/readme.txt');
+            let data = await response.text();
+            console.log(data);
+        }
+
+-   Besides the 'text()' method, the 'Response' object has other methods such as 'json()', 'blob()', 'formData()' and 'arrayBuffer()' to handle the respective type of data.
+
+-   
+
+Asynchronous JavaScript: -___________________________
+-   Asynchronous JavaScript is when functions run in parallel with other functions.
+-   Example:
+        function myDisplayer(something) {
+            document.getElementById("demo").innerHTML = something;
+        }
+
+        function myCalculator(num1, num2, myCallback) {
+            let sum = num1 + num2;
+            myCallback(sum);
+        }
+
+        myCalculator(5, 5, myDisplayer);
+-   In the example above, 'myDisplayer' is the name of a function.
+-   It is passed to 'myCalculator()' as an argument.
+-   In the real world, callbacks are most often used with asynchronous functions. A typical example is JavaScript 'setTimeout()'.
+

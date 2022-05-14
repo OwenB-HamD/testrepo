@@ -1,0 +1,35 @@
+Agile Methodology: -
+
+- Agile is the way of delivering small increments of a product to a client (small stages).
+- Agilemanifesto.org
+- The four core values:
+
+- The goal: - Develop iteratively - Adaptive planning to reduce risks - Easy tracking and delivery management - Better product quality
+
+- Minimum Viable Project: (Car example of a client needing to get from point A to B)
+  - Start the client off with the MVP so that they can get a sense and provide feedback for us to work on.
+
+UI/UX: -
+
+- UI = User Interface
+- UX = User Experience
+- Intergraating UX and Agile: - Technically Feasible - Economically viable - Satisfactory for the user
+
+Design Thinking: -
+
+- Five stage process: - Empathise - Define - Ideate - Prototype - Test
+- UCD Priotities: - Technically feasible - Economically viable - Desirable for the user
+- User Story: - "As an..." - "I want to..." - "So that I..." - "As an avid music lover, I want to be able to prioritise my most favourable songs so that I can pick and choose them depending on my mood/situation."
+
+CSS Variables: -
+
+- : root {
+  --'element': 'color';
+  }
+- 'css element' {
+  color: var(--'element');
+  }
+
+CSS Tips: -
+- CSS reset: 
+      - 

@@ -262,4 +262,8 @@ Function Expressions: -
                     - Declare a variable to make the variable's name be the name, or identifier, of your function. It is common practice to use the 'const' as the keyword to declare a variable.
                     - Assign as that variable's value an anonymous function created by using the 'function' keyword followed by a set of parentheses with possible parameters. Then a set of curly braces that contain the function body.
 -   To invoke a function expression, write the name of the variable in which the function is stored followed by parentheses enclosing any arguments being passed into the function.
+
+Objects: -
+-   Objects are essentially a set of properties.
+-   
 */
